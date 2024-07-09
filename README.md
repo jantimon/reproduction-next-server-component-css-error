@@ -1,5 +1,6 @@
 # Bug Reproduction
 
+next.js issue: https://github.com/vercel/next.js/issues/67591
 next-yak issue: https://github.com/jantimon/next-yak/issues/112
 
 ## Versions Tested:
