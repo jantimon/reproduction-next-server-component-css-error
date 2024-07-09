@@ -2,6 +2,11 @@
 
 next-yak issue: https://github.com/jantimon/next-yak/issues/112
 
+## Versions Tested:
+
+- 14.2.4
+- 15.0.0-canary.59
+
 ## Steps to reproduce
 
 ```bash
