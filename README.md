@@ -45,6 +45,6 @@ const Title = styled.h1`
 That's interesting because `page.tsx` imports `button.tsx` which is also compiled into a virtual css module
 from a server component.
 
- It looks like the error is caused by (`react_server_components.rs`)[https://github.com/vercel/next.js/blob/8f93430080f1c18b3f25a0b9c842063f6dc9c9e8/packages/next-swc/crates/next-custom-transforms/src/transforms/react_server_components.rs#L738-L749] of next-custom-transforms.  
+ It looks like the error is caused by [`react_server_components.rs`](https://github.com/vercel/next.js/blob/8f93430080f1c18b3f25a0b9c842063f6dc9c9e8/packages/next-swc/crates/next-custom-transforms/src/transforms/react_server_components.rs#L738-L749) of **next-custom-transforms**.  
 
  The reason seems to be that the virtual css module `./src/app/page.tsx?./page.yak.module.css` is compiled as a server component although it is a css module file.
